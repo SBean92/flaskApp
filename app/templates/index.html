@@ -16,4 +16,12 @@
                 <td><b>Network Card:</b></td><td>{{ Network }}</td>
             </tr>
         </table>
+        <button  onclick="showMore()">More Info</button>
+        <div id="moreInfo" style="display:none;">{{ Platform }}</div>
+        <script>
+            function showMore() {
+                x = document.getElementById('moreInfo');
+                x.style.display ="block";
+            }
+        </script>
 </html>

@@ -7,6 +7,7 @@ def index():
     returnDict = {}
     returnDict['Assignment'] = '2'
     returnDict['Course'] = 'COMP30670'
+    returnDict['Platform'] = systeminfo.getPlat()
     returnDict['System'] = systeminfo.getSystem()
     returnDict['Processor'] = systeminfo.getProcessor()
     returnDict['Machine'] = systeminfo.getMachine()
